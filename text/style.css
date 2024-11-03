@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dbc3ce;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* 基本字體大小 */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* 最大寬度 */
+    margin: 0 auto; /* 居中 */
+}
+.item {
+    flex: 1 1 300px; /* 每個項目最小寬度 300px，彈性增長 */
+    margin: 10px;
+}
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 14px; /* 調整小屏幕字體 */
+    }
+    .experience-container, .experience-item, .about-me {
+        flex-direction: column;
+    }
+
+}
+header {
+    background-color: #d4a6bc;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #c790ab;
+    text-align: center;
+    margin: 0;
+}
+
+nav a {
+    padding: 20px 80px;
+    display: inline-block;
+    color: #fcf2f2;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #be7092;
+    color: rgb(112, 46, 76);
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #d4a6bc;
+    color: #801946;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.about-me {
+    color: #413f3f;
+    display: flex;
+    align-items: center;
+    max-width: 950px;
+    margin: 60px auto;   
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.about-me h2 {
+    color: #1d1d1d;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #fcf2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.about-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column {
+    margin: 0 20px;
+    text-align: left;
+}
+
+.about-me h3 {
+    font-family: "Arial Black", sans-serif;
+    color: rgb(146, 76, 131);
+}
+.contact-link {
+    display: inline-block; 
+    margin-top: 0px; 
+}
+
+.email-icon {
+    width: 50px; 
+    height: auto; 
+    cursor: pointer; 
+    
+}
+
+.line-icon {
+    width: 50px; 
+    height: auto; 
+    cursor: pointer;
+}
+.phone-icon {
+    width: 45px; 
+    height: auto; 
+    cursor: pointer;
+    margin-top: -10px; 
+}
+.instagram-icon {
+    width: 40px; 
+    height: auto; 
+    cursor: pointer; 
+    margin-top: -5px; 
+}
+
+
+
+#school-experience {
+    background-color: #f1e3e9;
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.experience-item:last-child {
+    border-bottom: none; 
+}
+
+.experience-content h4 {
+    font-size: 1.2em;
+    color: #4a3b3b;
+    border-bottom: 2px solid #bb7086; 
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.experience-content p {
+    margin: 10px 0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+
+.experience-item {
+    flex: 1;                        
+    padding: 15px;
+    margin-top: 15px;
+    text-align: left;              
+    border-radius: 8px;
+
+}
+.experience-column {
+    flex: 1;
+    color: #3c3434;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.experience-item h4 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #944d7d;
+    border-bottom: 4px solid #c18798; 
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.experience-content p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+.skill {
+    text-align: center; 
+}
+
+
+
+.skill p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.experience-container h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.experience-content {
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    margin-top: 10px;
+    flex: 1;
+}
+
+
+#school-experience h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.experience-section {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.experience-photo {
+    width: 130px; 
+    height: 150px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.job-photo{
+    width: 130px; 
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 30px;
+    gap: 50px;
+}
+
+#skills {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px; 
+}
+
+.skill-column1 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.skill-column {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-item span {
+    width: 150px; 
+    text-align: center;
+    font-weight: bold;
+    color: #6a4b53;
+}
+
+
+.progress-bar {
+    position: relative;
+    width: 150px;
+    height: 18px;
+    background-color: #cba6b1; 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: var(--progress); 
+    background-color: #bb7086; 
+    border-radius: 8px;
+    transition: width 1.5s ease;
+}
+.experience-text {
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

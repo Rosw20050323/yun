@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人檔案</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-color: #dbc3ce;
+    }
+    #school-experience {
+            background-color: #f1e3e9;
+            padding: 20px; 
+            border-radius: 8px; 
+            margin: 30px 0; 
+        }
+    .line-icon {
+        width: 55px; 
+        height: auto; 
+        cursor: pointer; 
+    }
+    .phone-icon {
+            width: 45px;
+            height: auto; 
+            cursor: pointer; 
+            margin-top: -10px;
+        }
+    .instagram-icon {
+            width: 40px; 
+            height: auto; 
+            cursor: pointer; 
+            margin-top: -5px;
+        }
+        .progress-bar {
+            position: relative; 
+            width: 150px; 
+            height: 18px; 
+            background-color: #cba6b1; 
+            border-radius: 8px; 
+            overflow: hidden; 
+        }
+
+        .progress-bar::before {
+            content: "";
+            position: absolute; 
+            height: 100%; 
+            width: var(--progress);
+            background-color: #bb7086; 
+            border-radius: 8px; 
+            transition: width 1.5s ease; 
+            left: 0; 
+        }
+
+       
+        .skills-container {
+            display: flex; 
+        }
+
+        .skill-column {
+            margin-right: 20px; 
+        }
+
+        .skill-item {
+            margin-bottom: 10px; 
+        }
+</style>
+<body>
+    <header>
+        <h1> Mywebsite - 吳紜瑜</h1>
+    </header>
+
+    <nav>
+        <b><a href="#about-me">個人資訊</a></b>
+        <b><a href="#school-experience">我的經歷</a></b>
+        <b><a href="#skills">自身能力</a></b>
+    </nav>
+
+    <article>
+        <section id="about-me" class="about-me">
+            <img src="https://i.postimg.cc/T1VM3jm7/S-183083011.jpg" alt="我的照片" class="profile-photo">
+            <div class="about-text">
+                <h2>About Me...</h2>
+                <div class="about-columns">
+                    <div class="column">
+                        <p>姓名 : 吳紜瑜</p>
+                        <p>學校 : 中原大學</p>
+                        <p>科系 : 資訊管理</p>
+                        <p>生日 : 2005 年 3 月 23 日</p>
+                    </div>
+                    <div class="column">
+                        <p>興趣 : 戶外活動、追劇、交朋友</p>
+                        <p>特質 : 同理心強、有責任感、樂於助人</p>
+                        <h3>聯繫方式</h3>
+                        <a href="mailto:rosewuniu@gmail.com" class="contact-link">
+                            <img src="https://i.postimg.cc/nhf1f7W2/Gmail-Logo.png" alt="發送郵件" class="email-icon">
+                        </a>
+                        <a href="line://ti/p/0925170323" class="contact-link" target="_blank">
+                            <img src="https://i.postimg.cc/MTVb3m01/Line-Logo-2011-2013.png" alt="聯絡我" class="line-icon">
+                        </a>
+                        <a href="tel:+886925170323" class="contact-link">
+                            <img src="https://i.postimg.cc/v8h7DzzS/icon-ui-032.png" alt="撥打電話" class="phone-icon">
+                        </a>
+                        <a href="https://www.instagram.com/yuwu_.0323/?hl=zh-tw" class="contact-link" target="_blank">
+                            <img src="https://i.postimg.cc/7LnKBFFM/Instagram-IG-Logo-Transparent-Image.png" alt="Instagram" class="instagram-icon">
+                        </a>
+                    </div>
+                </div>
+                <blockquote style="margin-top: 30px; font-size: 1.0em; color: #4a3b3b; border-left: 4px solid #bb7086; padding-left: 10px; text-shadow: 2px 2px 4px rgba(44, 42, 42, 0.3);">
+                    “Love the life you live. Live the life you love.”
+                </blockquote>
+                
+            </div>
+        </section>
+    </article>
+
+    <article>
+        <section id="school-experience">
+            <b><h3>Experience</h3></b>
+            <div class="experience-container">
+                
+                <!-- 學校經歷區塊 -->
+                <div class="experience-column">
+                    <div class="experience-item">
+                        <b><h4>學校經歷</h4></b>
+                        <div class="experience-section">
+                            <div class="experience-text">
+                                <h5><b><p>1. 系烤活動公關組</p></b></h5>
+                                <p>參加這個活動讓我學習到如何有效與店家溝通，拉活動需要的贊助費，口語表達以及說的有吸引力是很重要的，系烤當天要負責站在門口引導以及規畫停車動線，大家都差不多到場後下去小組內帶著學弟妹烤肉、玩遊戲，也要時時注意現在需要甚麼要做甚麼，是很需要專注力的一個活動，更因為參與這個認識了很多不同的人，很值得的體驗。</p>
+                            </div>
+                            <img src="https://i.postimg.cc/x12H3jQ8/S-183361539.jpg" alt="學校經歷照片" class="experience-photo">
+                        </div>
+        
+                        <div class="experience-section">
+                            <div class="experience-text">
+                                <h5><b><p>2. 耶誕舞會公關組</p></b></h5>
+                                <p>這個活動學習到最多的是訓練自己的台風和膽量，要如何勇敢的在台上主持，不讓氣氛冷掉，或是有突發狀況該怎麼處理，當天必須引導、服務來參加的同學，也是多讓自己磨練社交的機會，接這個活動最困難的是做前導影片，要如何幽默的展現不是一件很容易的事情，也因為這樣更激發了我的思考創造力，多動腦在平常用不到的領域。</p>
+                            </div>
+                            <img src="https://i.postimg.cc/fLR99Vyp/S-183877635.jpg" alt="學校經歷照片" class="experience-photo">
+                        </div>
+        
+                        <div class="experience-section">
+                            <div class="experience-text">
+                                <h5><b><p>3. 返鄉服務活動組</p></b></h5>
+                                <p>參與羅浮社的返鄉服務也是一個很有意義的活動，透過去偏鄉的小學帶營隊來讓小朋友們對生活又更了解一些，也藉由這個活動學習如何策畫會讓大家喜歡遊戲還有活動，這是我沒有的經驗，一定可以從此次收穫非常多。</p>
+                            </div>
+                            <img src="https://i.postimg.cc/K8XwFjvY/S-185065479.jpg" alt="學校經歷照片" class="experience-photo">
+
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 打工經歷區塊 -->
+                <div class="experience-column">
+                    <div class="experience-item">
+                        <b><h4>打工經歷</h4></b>
+                        <div class="experience-section">
+                            <div class="experience-text">
+                                <h5><b><p>1. 補習班助教</p></b></h5>
+                                <p>這是我的第一份打工，主要工作內容是管理秩序、幫忙老師擦黑板、解答學生不會的問題以及影印考卷...之類的事情，在這份工作讓我學習到勇敢，要在一個班級站上台解題對我來說不是一件容易的事情，也讓我更有臨場反應去解決學生之間的衝突，該如何處理，說話做事也都會比之前謹慎、三思，是有收穫的一個工作。</p>
+                            </div>
+                            <img src="https://i.postimg.cc/Z5DKgGgX/S-183861251.jpg" alt="打工經歷照片" class="job-photo">
+                        </div>
+        
+                        <div class="experience-section">
+                            <div class="experience-text">
+                                <h5><b><p>2. 浮木企業</p></b></h5>
+                                <p>大一下學期幫忙叔叔經營他們店的社群帳號、寄貨、包貨、與客人接洽一些事務，經營是需要去思考怎麼樣可以更吸引客人的，經過這段時間讓我對銷售方面有了更深入的認識，也在與客人對談時懂得如何說話，讓他們想繼續聽下去，這個經驗對我是很有幫助的，我相信未來在職場上一定會用得上這份工作帶給我的啟發。</p>
+                            </div>
+                            <img src="https://i.postimg.cc/BvH9gRGT/S-183869449.jpg" alt="打工經歷照片" class="job-photo">
+                        </div>
+        
+                        <div class="experience-section">
+                            <div class="experience-text">
+                                <h5><b><p>3. A-nini 夏威夷輕食</p></b></h5>
+                                <p>在這間餐廳主要是負責開早備料，以及餐期的外場收銀、服務、外帶、內用，不只考驗細心也考驗做餐點的速度，因為是輕食餐廳，所以客人可以挑選自己想要的配料，依據不同的大小挑選相對應的數量，不能裝錯也要速度快，不然客人會等太久，也會遇到各式各樣的客人，無論如何都要笑臉面對，這大概是服務業最重要的一件事，如何正確應對是最大的收穫，也大大提升我遇到困難時解決問題的能力，我很慶幸當初有做這份工作。</p>
+                            </div>
+                            <img src="https://i.postimg.cc/8C8xjwrj/S-183869447.jpg" alt="打工經歷照片" class="job-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </article>
+    
+    <article>
+        <section id="skills">
+            <h2>skills</h2>
+            <div class="skills-container">
+                <div class="skill-column1">
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="progress-bar" style="--progress: 55%;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Html</span>
+                        <div class="progress-bar" style="--progress: 60%;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Java</span>
+                        <div class="progress-bar" style="--progress: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill-column">
+                    <div class="skill-item">
+                        <span>團隊合作</span>
+                        <div class="progress-bar" style="--progress: 90%;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>溝通能力</span>
+                        <div class="progress-bar" style="--progress: 85%;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>批判思考</span>
+                        <div class="progress-bar" style="--progress: 80%;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>責任心</span>
+                        <div class="progress-bar" style="--progress: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <h5>Copyright © 2022 All rights reserved</h5>
+    </footer>
+</body>
+</html>
+
+
